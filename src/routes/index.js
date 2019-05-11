@@ -55,12 +55,15 @@ const AuthStack = createStackNavigator({
 const DrawerStack = createDrawerNavigator({
 	Home: {
     screen: HomeScreen,
+    navigationOptions: { title: "Home" }
 	},
 	Profile: {
     screen: ProfileScreen,
+    navigationOptions: { title: "Profile" }
 	},
 	Payment: {
     screen: PaymentScreen,
+    navigationOptions: { title: "Payment" }
 	}
 }, {
 	initialRouteName: "Home",
@@ -69,7 +72,7 @@ const DrawerStack = createDrawerNavigator({
 
 const DrawerNavigation = createStackNavigator({
   DrawerStack: {
-    screen: DrawerStack
+    screen: DrawerStack,
   },
   AboutUs: {
     screen: AboutUsScreen,
